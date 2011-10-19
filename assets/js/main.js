@@ -1,3 +1,6 @@
+var api = 'http://github.com/api/v2/json/';
 $(document).ready(function () {
-    console.log('ready: github.com/api/v2/json/user/show/michaelowens');
+    $.getJSON(api + 'user/show/michaelowens', function (data) {
+        console.log(data);
+    });
 });
