@@ -11,4 +11,6 @@ function handleUser(json) {
     user = json.user;
     $('#my_repos').text(user.public_repo_count);
     $('#my_followers').text(user.followers_count);
+
+    $('.site').fadeIn();
 }
