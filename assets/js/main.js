@@ -8,6 +8,6 @@ $(document).ready(function () {
 
 function handleUser(json) {
     user = json.user;
-    $('#repos').text(user.public_repo_count);
-    $('#fols').text(user.followers_count);
+    $('#my_repos').text(user.public_repo_count);
+    $('#my_followers').text(user.followers_count);
 }
